@@ -6,4 +6,7 @@ module com.ejercicios.jdbcapp {
 
     opens com.ejercicios.jdbcapp to javafx.fxml;
     exports com.ejercicios.jdbcapp;
+    exports com.ejercicios.jdbcapp.modelos;
+    exports com.ejercicios.jdbcapp.helpers;
+    opens com.ejercicios.jdbcapp.modelos to javafx.fxml;
 }
