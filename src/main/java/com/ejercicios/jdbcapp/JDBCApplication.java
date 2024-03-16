@@ -14,7 +14,7 @@ public class JDBCApplication extends Application {
     @Override
     public void start(Stage stage) {
         var root = new ContenedorCursos();
-        Scene scene = new Scene(root, 790, 200);
+        Scene scene = new Scene(root, 860, 480);
         stage.setTitle("Cursos");
         stage.setScene(scene);
         stage.show();

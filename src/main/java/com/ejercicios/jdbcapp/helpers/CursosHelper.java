@@ -35,4 +35,19 @@ public class CursosHelper {
             return null;
         }
     }
+
+    public void agregarCurso(Curso curso) {
+        try {
+
+            Connection conn = ConexionDBCursos.obtenerInstancia();
+            Statement inst = conn.createStatement();
+            String FechaInicio = "2024-0-01";
+            String FechaTermino = "2021-01-01";
+            String querySQL = String.format("insert into curso (Clave, Nombre, Descripcion, NoHorar, FechaInicio, FechaTermino, Costo, Instructor) values ('%s', '%s', '%s', '%d', '%s', '%s', '%f', '%s')", curso.getClave(), curso.getNombre(), curso.getDescripcion(), curso.getNoHorar(), FechaInicio, FechaTermino, curso.getCosto(), curso.getInstructor());
+
+            inst.executeUpdate(querySQL);
+        } catch (Exception e) {
+        }
+    }
+
 }

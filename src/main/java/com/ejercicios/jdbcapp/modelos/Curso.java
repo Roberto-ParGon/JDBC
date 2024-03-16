@@ -23,6 +23,9 @@ public class Curso {
         Instructor = instructor;
     }
 
+    public Curso() {
+    }
+
     public Curso(int id, String clave, String nombre, String descripcion, String instructor, int noHorar, java.sql.Date fechaInicio, java.sql.Date fechaTermino, double costo) {
     }
 
